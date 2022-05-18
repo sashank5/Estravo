@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <ImageButton
+        android:id="@+id/menu"
+        android:layout_width="62dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="335dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#10294C"
+        app:srcCompat="@drawable/menu" />
+
+    <TextView
+        android:id="@+id/tv30"
+        android:layout_width="140dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="10dp"
+        android:text="Coimbatore, India"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tv31"
+        android:layout_width="230dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:text="Restaurants"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/white_location_pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/white_location_pin" />
+
+    <ImageView
+        android:id="@+id/backicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/back" />
+
+    <SearchView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/radius_search"
+        android:backgroundTint="@color/grey"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search Here" />
+
+
+    <TextView
+        android:id="@+id/tv32"
+        android:layout_width="370dp"
+        android:layout_height="46dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="750dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/radius_bottom_navi" />
+    <ImageButton
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="745dp"
+        android:backgroundTint="#10294C"
+        app:srcCompat="@drawable/save" />
+
+    <ImageButton
+        android:id="@+id/homeicon"
+        android:layout_width="wrap_content"
+        android:onClick="home"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="745dp"
+        android:backgroundTint="#10294C"
+        app:srcCompat="@drawable/homeicon" />
+
+    <ImageButton
+        android:id="@+id/support"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="745dp"
+        android:backgroundTint="#10294C"
+        app:srcCompat="@drawable/support" />
+
+    <ImageButton
+        android:id="@+id/profile"
+        android:onClick="profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="745dp"
+        android:backgroundTint="#10294C"
+        app:srcCompat="@drawable/profile" />
+
+    <ScrollView
+        android:id="@+id/hotels"
+        android:layout_width="wrap_content"
+        android:layout_height="600dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginBottom="110dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="385dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="25dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="6dp"
+                app:cardMaxElevation="10dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true">
+
+
+                <TextView
+                    android:id="@+id/tv47"
+                    android:layout_width="176dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="220dp"
+                    android:layout_marginTop="30dp"
+                    android:text="La Cabana"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="201dp"
+                    android:layout_height="147dp"
+                    android:orientation="vertical">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/res1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="0dp"
+                        android:contentDescription="@string/app_name"
+                        android:padding="0dp"
+                        android:src="@drawable/res_1" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv48"
+                    android:layout_width="176dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="220dp"
+                    android:layout_marginTop="80dp"
+                    android:text="10 KM from here"
+                    android:textColor="@color/green"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv49"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="235dp"
+                    android:layout_marginTop="55dp"
+                    android:text="Ram Nagar"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/location_pin1"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="220dp"
+                    android:layout_marginTop="57dp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="0dp"
+                    android:src="@drawable/location_pin" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="355dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="55dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="6dp"
+                app:cardMaxElevation="10dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="false">
+
+
+                <TextView
+                    android:id="@+id/tv50"
+                    android:layout_width="176dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="220dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Welcome Cafe"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="201dp"
+                    android:layout_height="147dp"
+                    android:orientation="vertical">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/res2"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="0dp"
+                        android:contentDescription="@string/app_name"
+                        android:padding="0dp"
+                        android:src="@drawable/res_2" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv51"
+                    android:layout_width="176dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="220dp"
+                    android:layout_marginTop="80dp"
+                    android:text="44 KM from here"
+                    android:textColor="@color/green"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv52"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="235dp"
+                    android:layout_marginTop="55dp"
+                    android:text="Race Course"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/location_pin2"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="220dp"
+                    android:layout_marginTop="57dp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="0dp"
+                    android:src="@drawable/location_pin" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="385dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="25dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="6dp"
+                app:cardMaxElevation="10dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true">
+
+
+                <TextView
+                    android:id="@+id/tv53"
+                    android:layout_width="176dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="220dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Afghan Grill"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="201dp"
+                    android:layout_height="147dp"
+                    android:orientation="vertical">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/res3"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="0dp"
+                        android:contentDescription="@string/app_name"
+                        android:padding="0dp"
+                        android:src="@drawable/res_3" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv54"
+                    android:layout_width="176dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="220dp"
+                    android:layout_marginTop="80dp"
+                    android:text="10 KM from here"
+                    android:textColor="@color/green"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv55"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="235dp"
+                    android:layout_marginTop="55dp"
+                    android:text="Avinashi Rd"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/location_pin3"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="220dp"
+                    android:layout_marginTop="57dp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="0dp"
+                    android:src="@drawable/location_pin" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="355dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="25dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="6dp"
+                app:cardMaxElevation="10dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="false">
+
+
+                <TextView
+                    android:id="@+id/tv56"
+                    android:layout_width="176dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="220dp"
+                    android:layout_marginTop="30dp"
+                    android:text="KOVE"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="201dp"
+                    android:layout_height="147dp"
+                    android:orientation="vertical">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/res4"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="0dp"
+                        android:contentDescription="@string/app_name"
+                        android:padding="0dp"
+                        android:src="@drawable/res_4" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv57"
+                    android:layout_width="176dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="220dp"
+                    android:layout_marginTop="80dp"
+                    android:text="10 KM from here"
+                    android:textColor="@color/green"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv58"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="235dp"
+                    android:layout_marginTop="55dp"
+                    android:text="RS Puram"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/location_pin4"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="220dp"
+                    android:layout_marginTop="57dp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="0dp"
+                    android:src="@drawable/location_pin" />
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

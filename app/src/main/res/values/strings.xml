@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- untitled strings -->
+    <string name="image_of_the_song" />
+    <string name="app_name">Page 1</string>
+    <string name="ek_img_content">ExportKit Image</string>
+    <string name="click_string">Click</string>
+    <string name="you_clcked_string">You Clcked</string>
+</resources>
