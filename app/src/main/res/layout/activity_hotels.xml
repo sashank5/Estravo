@@ -2,11 +2,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:background="@drawable/background">
-
-
 
     <ImageButton
         android:id="@+id/menu"
@@ -63,405 +61,26 @@
 
 
     <SearchView
+        android:id="@+id/search_view"
         android:layout_width="370dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="25dp"
         android:layout_marginTop="170dp"
-        android:layout_marginBottom="10dp"
         android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/radius_search"
         android:backgroundTint="@color/grey"
         android:iconifiedByDefault="false"
         android:queryHint="Search Here" />
 
-    <ScrollView
-        android:id="@+id/hotels"
-        android:layout_width="wrap_content"
-        android:layout_height="570dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="230dp"
-        android:layout_marginBottom="110dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:orientation="vertical">
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="396dp"
-                android:layout_height="146dp"
-                android:layout_margin="5dp"
-                app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="6dp"
-                app:cardMaxElevation="10dp"
-                app:cardPreventCornerOverlap="true"
-                app:cardUseCompatPadding="false">
-
-
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="176dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="220dp"
-                    android:layout_marginTop="30dp"
-                    android:text="Vivanta Coimbatore"
-                    android:textColor="@color/black"
-                    android:textSize="14dp"
-                    android:textStyle="bold" />
-
-                <LinearLayout
-                    android:layout_width="201dp"
-                    android:layout_height="147dp"
-                    android:orientation="vertical">
-
-                    <pl.droidsonroids.gif.GifImageView
-                        android:id="@+id/h_1"
-                        android:layout_width="200dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="0dp"
-                        android:contentDescription="@string/app_name"
-                        android:padding="0dp"
-                        android:src="@drawable/hotel_1" />
-
-                </LinearLayout>
-
-
-                <TextView
-                    android:id="@+id/textView17"
-                    android:layout_width="176dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="220dp"
-                    android:layout_marginTop="80dp"
-                    android:text="10 KM from here"
-                    android:textColor="@color/green"
-                    android:textSize="14dp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/textView18"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="235dp"
-                    android:layout_marginTop="55dp"
-                    android:text="Railway Station"
-                    android:textSize="14dp"
-                    android:textStyle="bold" />
-
-                <pl.droidsonroids.gif.GifImageView
-                    android:id="@+id/location_pin"
-                    android:layout_width="15dp"
-                    android:layout_height="15dp"
-                    android:layout_marginLeft="220dp"
-                    android:layout_marginTop="57dp"
-                    android:contentDescription="@string/app_name"
-                    android:padding="0dp"
-                    android:src="@drawable/location_pin" />
-
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="389dp"
-                android:layout_height="150dp"
-                android:layout_margin="5dp"
-                app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="6dp"
-                app:cardMaxElevation="10dp"
-                app:cardPreventCornerOverlap="true"
-                app:cardUseCompatPadding="false">
-
-
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="176dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="220dp"
-                    android:layout_marginTop="30dp"
-                    android:text="Holiday Residency"
-                    android:textColor="@color/black"
-                    android:textSize="14dp"
-                    android:textStyle="bold" />
-
-                <LinearLayout
-                    android:layout_width="201dp"
-                    android:layout_height="147dp"
-                    android:orientation="vertical">
-
-                    <pl.droidsonroids.gif.GifImageView
-                        android:id="@+id/h_2"
-                        android:layout_width="200dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="0dp"
-                        android:contentDescription="@string/app_name"
-                        android:padding="0dp"
-                        android:src="@drawable/hotel_2" />
-
-                </LinearLayout>
-
-
-                <TextView
-                    android:id="@+id/textView17"
-                    android:layout_width="176dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="220dp"
-                    android:layout_marginTop="80dp"
-                    android:text="44 KM from here"
-                    android:textColor="@color/green"
-                    android:textSize="14dp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/textView18"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="235dp"
-                    android:layout_marginTop="55dp"
-                    android:text="Saravanampatti"
-                    android:textSize="14dp"
-                    android:textStyle="bold" />
-
-                <pl.droidsonroids.gif.GifImageView
-                    android:id="@+id/location_pin"
-                    android:layout_width="15dp"
-                    android:layout_height="15dp"
-                    android:layout_marginLeft="220dp"
-                    android:layout_marginTop="57dp"
-                    android:contentDescription="@string/app_name"
-                    android:padding="0dp"
-                    android:src="@drawable/location_pin" />
-
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="388dp"
-                android:layout_height="148dp"
-                android:layout_margin="5dp"
-                app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="6dp"
-                app:cardMaxElevation="10dp"
-                app:cardPreventCornerOverlap="true"
-                app:cardUseCompatPadding="false">
-
-
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="176dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="220dp"
-                    android:layout_marginTop="30dp"
-                    android:text="The Orbis Hotel"
-                    android:textColor="@color/black"
-                    android:textSize="14dp"
-                    android:textStyle="bold" />
-
-                <LinearLayout
-                    android:layout_width="201dp"
-                    android:layout_height="147dp"
-                    android:orientation="vertical">
-
-                    <pl.droidsonroids.gif.GifImageView
-                        android:id="@+id/h_1"
-                        android:layout_width="200dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="0dp"
-                        android:contentDescription="@string/app_name"
-                        android:padding="0dp"
-                        android:src="@drawable/hotel_3" />
-
-                </LinearLayout>
-
-
-                <TextView
-                    android:id="@+id/textView17"
-                    android:layout_width="176dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="220dp"
-                    android:layout_marginTop="80dp"
-                    android:text="10 KM from here"
-                    android:textColor="@color/green"
-                    android:textSize="14dp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/textView18"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="235dp"
-                    android:layout_marginTop="55dp"
-                    android:text="Peelamedu"
-                    android:textSize="14dp"
-                    android:textStyle="bold" />
-
-                <pl.droidsonroids.gif.GifImageView
-                    android:id="@+id/location_pin"
-                    android:layout_width="15dp"
-                    android:layout_height="15dp"
-                    android:layout_marginLeft="220dp"
-                    android:layout_marginTop="57dp"
-                    android:contentDescription="@string/app_name"
-                    android:padding="0dp"
-                    android:src="@drawable/location_pin" />
-
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="393dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="6dp"
-                app:cardMaxElevation="10dp"
-                app:cardPreventCornerOverlap="true"
-                app:cardUseCompatPadding="false">
-
-
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="176dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="220dp"
-                    android:layout_marginTop="30dp"
-                    android:text="Welcomhotel"
-                    android:textColor="@color/black"
-                    android:textSize="14dp"
-                    android:textStyle="bold" />
-
-                <LinearLayout
-                    android:layout_width="201dp"
-                    android:layout_height="147dp"
-                    android:orientation="vertical">
-
-                    <pl.droidsonroids.gif.GifImageView
-                        android:id="@+id/h_1"
-                        android:layout_width="200dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="0dp"
-                        android:contentDescription="@string/app_name"
-                        android:padding="0dp"
-                        android:src="@drawable/hotel_4" />
-
-                </LinearLayout>
-
-
-                <TextView
-                    android:id="@+id/textView17"
-                    android:layout_width="176dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="220dp"
-                    android:layout_marginTop="80dp"
-                    android:text="10 KM from here"
-                    android:textColor="@color/green"
-                    android:textSize="14dp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/textView18"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="235dp"
-                    android:layout_marginTop="55dp"
-                    android:text="Race Course"
-                    android:textSize="14dp"
-                    android:textStyle="bold" />
-
-                <pl.droidsonroids.gif.GifImageView
-                    android:id="@+id/location_pin"
-                    android:layout_width="15dp"
-                    android:layout_height="15dp"
-                    android:layout_marginLeft="220dp"
-                    android:layout_marginTop="57dp"
-                    android:contentDescription="@string/app_name"
-                    android:padding="0dp"
-                    android:src="@drawable/location_pin" />
-
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="388dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="6dp"
-                app:cardMaxElevation="10dp"
-                app:cardPreventCornerOverlap="true"
-                app:cardUseCompatPadding="false">
-
-
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="176dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="220dp"
-                    android:layout_marginTop="30dp"
-                    android:text="Ibis"
-                    android:textColor="@color/black"
-                    android:textSize="14dp"
-                    android:textStyle="bold" />
-
-                <LinearLayout
-                    android:layout_width="201dp"
-                    android:layout_height="147dp"
-                    android:orientation="vertical">
-
-                    <pl.droidsonroids.gif.GifImageView
-                        android:id="@+id/h_1"
-                        android:layout_width="200dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="0dp"
-                        android:contentDescription="@string/app_name"
-                        android:padding="0dp"
-                        android:src="@drawable/hotel_5" />
-
-                </LinearLayout>
-
-
-                <TextView
-                    android:id="@+id/textView17"
-                    android:layout_width="176dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="220dp"
-                    android:layout_marginTop="80dp"
-                    android:text="10 KM from here"
-                    android:textColor="@color/green"
-                    android:textSize="14dp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/textView18"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="235dp"
-                    android:layout_marginTop="55dp"
-                    android:text="Lakshmi Mills"
-                    android:textSize="14dp"
-                    android:textStyle="bold" />
-
-                <pl.droidsonroids.gif.GifImageView
-                    android:id="@+id/location_pin"
-                    android:layout_width="15dp"
-                    android:layout_height="15dp"
-                    android:layout_marginLeft="220dp"
-                    android:layout_marginTop="57dp"
-                    android:contentDescription="@string/app_name"
-                    android:padding="0dp"
-                    android:src="@drawable/location_pin" />
-
-
-            </androidx.cardview.widget.CardView>
-
-
-        </LinearLayout>
-
-
-    </ScrollView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="235dp"
+        android:background="#ffffff">
+
+    </androidx.recyclerview.widget.RecyclerView>
 
     <TextView
         android:id="@+id/tv35"
@@ -508,5 +127,7 @@
         android:layout_marginTop="745dp"
         android:backgroundTint="#10294C"
         app:srcCompat="@drawable/profile" />
+
+
 
 </RelativeLayout>

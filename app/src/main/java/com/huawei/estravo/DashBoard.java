@@ -34,7 +34,7 @@ public class DashBoard extends AppCompatActivity {
         startActivity(intent);
     }
     public void hotels(View view){
-        Intent intent = new Intent(DashBoard.this, Hotels.class);
+        Intent intent = new Intent(DashBoard.this, Recycler_hotels.class);
         startActivity(intent);
     }
     public void translations(View view){

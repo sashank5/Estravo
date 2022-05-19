@@ -62,7 +62,7 @@
             android:parentActivityName=".LoginActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name=".EmergencyServices"
+            android:name=".Recycler_hotels"
             android:parentActivityName=".DashBoard" />
         <activity
             android:name=".Hotels"
