@@ -16,7 +16,7 @@
         <entry key="..\:/Projects/Estravo/app/src/main/res/layout/activity_camera_demo.xml" value="0.1984375" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/layout/activity_categories.xml" value="0.136" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/layout/activity_circle_demo.xml" value="0.1984375" />
-        <entry key="..\:/Projects/Estravo/app/src/main/res/layout/activity_dash_board.xml" value="0.176" />
+        <entry key="..\:/Projects/Estravo/app/src/main/res/layout/activity_dash_board.xml" value="0.13148907103825136" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/layout/activity_emergencyservices.xml" value="0.176" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/layout/activity_gestures_demo.xml" value="0.1984375" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/layout/activity_hotels.xml" value="0.136" />
@@ -42,8 +42,10 @@
         <entry key="..\:/Projects/Estravo/app/src/main/res/layout/item_design.xml" value="0.12" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/layout/layout.xml" value="0.234375" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/layout/listview_item.xml" value="0.12" />
+        <entry key="..\:/Projects/Estravo/app/src/main/res/layout/navibar.xml" value="0.16216216216216217" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/layout/splash_screen.xml" value="0.264" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.16216216216216217" />
+        <entry key="..\:/Projects/Estravo/app/src/main/res/menu/bottom_navigation_view.xml" value="0.16216216216216217" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/menu/menu.xml" value="0.16216216216216217" />
       </map>
     </option>

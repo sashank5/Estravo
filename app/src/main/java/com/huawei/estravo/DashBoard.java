@@ -31,6 +31,7 @@ public class DashBoard extends AppCompatActivity {
         startActivity(intent);
     }
     public void restaurants(View view){
+
         Intent intent = new Intent(DashBoard.this, Recycler_restaurants.class);
         Bundle bundle = getIntent().getExtras();
         String User_name = bundle.getString("User_name");
@@ -49,6 +50,7 @@ public class DashBoard extends AppCompatActivity {
         startActivity(intent);
     }
     public void hotels(View view){
+
         Intent intent = new Intent(DashBoard.this, Recycler_hotels.class);
         Bundle bundle = getIntent().getExtras();
         String User_name = bundle.getString("User_name");
