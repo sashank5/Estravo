@@ -50,7 +50,6 @@
         android:queryHint="Discover a city" />
 
 
-
     <HorizontalScrollView
         android:id="@+id/categories"
         android:layout_width="match_parent"
@@ -668,7 +667,6 @@
         app:srcCompat="@drawable/save" />
 
     <ImageButton
-        android:id="@+id/homeicon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="37dp"
@@ -686,13 +684,13 @@
         app:srcCompat="@drawable/support" />
 
     <ImageButton
-        android:id="@+id/profile"
-        android:onClick="profile"
+        android:id="@+id/profile1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="310dp"
         android:layout_marginTop="745dp"
         android:backgroundTint="#10294C"
+        android:onClick="profile"
         app:srcCompat="@drawable/profile" />
 
 

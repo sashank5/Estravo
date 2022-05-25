@@ -2,8 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@drawable/background">
 
     <ImageButton
@@ -36,7 +36,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginBottom="10dp"
         android:layout_weight="1"
-        android:text="Hotels"
+        android:text="TextView"
         android:textColor="@color/white"
         android:textSize="24dp"
         android:textStyle="bold" />
@@ -50,14 +50,17 @@
         android:layout_marginBottom="10dp"
         app:srcCompat="@drawable/white_location_pin" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/backicon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
         android:layout_marginBottom="10dp"
-        app:srcCompat="@drawable/back" />
+        android:background="@color/white"
+        android:backgroundTint="@color/some_blue"
+        android:onClick="back"
+        app:srcCompat="@drawable/ic_baseline_keyboard_backspace_24" />
 
 
     <SearchView
@@ -90,6 +93,7 @@
         android:layout_marginTop="750dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/radius_bottom_navi" />
+
     <ImageButton
         android:id="@+id/save"
         android:layout_width="wrap_content"
@@ -101,12 +105,12 @@
 
     <ImageButton
         android:id="@+id/homeicon"
-        android:onClick="home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="37dp"
         android:layout_marginTop="745dp"
         android:backgroundTint="#10294C"
+        android:onClick="home"
         app:srcCompat="@drawable/homeicon" />
 
     <ImageButton
@@ -119,13 +123,13 @@
         app:srcCompat="@drawable/support" />
 
     <ImageButton
-        android:id="@+id/profile"
-        android:onClick="profile"
+        android:id="@+id/go_profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="310dp"
         android:layout_marginTop="745dp"
         android:backgroundTint="#10294C"
+        android:onClick="go_profile"
         app:srcCompat="@drawable/profile" />
 
 

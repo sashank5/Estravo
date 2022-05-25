@@ -75,6 +75,7 @@
         android:text="Email ID"
         android:textSize="18dp"
         android:textStyle="bold" />
+
     <TextView
         android:id="@+id/tv46"
         android:layout_width="370dp"
@@ -93,12 +94,13 @@
         app:srcCompat="@drawable/save" />
 
     <ImageButton
-        android:id="@+id/homeicon"
+        android:id="@+id/homeicon1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="37dp"
         android:layout_marginTop="745dp"
         android:backgroundTint="#10294C"
+        android:onClick="dashboard"
         app:srcCompat="@drawable/homeicon" />
 
     <ImageButton
@@ -118,14 +120,17 @@
         android:layout_marginTop="745dp"
         android:backgroundTint="#10294C"
         app:srcCompat="@drawable/profile" />
-    <ImageView
+
+    <ImageButton
         android:id="@+id/backicon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
         android:layout_marginBottom="10dp"
-        app:srcCompat="@drawable/back" />
+        android:background="@color/white"
+        android:backgroundTint="@color/some_blue"
+        app:srcCompat="@drawable/ic_baseline_keyboard_backspace_24" />
     <TextView
         android:id="@+id/tv37"
         android:layout_width="230dp"
@@ -139,20 +144,8 @@
         android:textSize="24dp"
         android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/HuaweiIdSignOutButton"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginStart="130dp"
-        android:layout_marginTop="630dp"
-        android:layout_marginBottom="24dp"
-        android:background="@drawable/radius_search"
-        android:backgroundTint="@color/some_blue"
-        android:text="Sign Out"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="15dp" />
+
+
 
     <ImageView
         android:id="@+id/imageView5"
@@ -160,7 +153,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="130dp"
         android:layout_marginTop="200dp"
-        android:background="@drawable/profile_radius"
+
+        android:background="@color/black"
         tools:srcCompat="@drawable/profileimg" />
 
     <ImageButton

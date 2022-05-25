@@ -56,56 +56,28 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/below" />
 
+
     <com.huawei.hms.support.hwid.ui.HuaweiIdAuthButton
         android:id="@+id/HuaweiIdAuthButton"
         android:layout_width="260dp"
         android:layout_height="38dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginStart="72dp"
-        android:layout_marginBottom="24dp"
         android:backgroundTint="@color/some_blue"
         android:gravity="center_vertical|center_horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/HuaweiIdSignOutButton"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/HuaweiIdCancelAuthButton"
-        android:layout_width="260dp"
-        android:layout_height="38dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginStart="72dp"
-        android:layout_marginBottom="380dp"
-        android:background="@drawable/radius_search"
-        android:backgroundTint="@color/some_blue"
-        android:text="Cancel Authorization"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/HuaweiIdSignOutButton"
-        android:layout_width="260dp"
-        android:layout_height="38dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginStart="72dp"
-        android:layout_marginBottom="24dp"
-        android:background="@drawable/radius_search"
-        android:backgroundTint="@color/some_blue"
-        android:text="Sign Out"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="15dp"
-        app:layout_constraintBottom_toTopOf="@+id/HuaweiIdCancelAuthButton"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.299"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/log"
         android:layout_width="350dp"
         android:layout_height="83dp"
         android:layout_marginStart="28dp"
-        android:layout_marginBottom="264dp"
+        android:layout_marginBottom="232dp"
         android:textColor="@color/some_blue"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -125,14 +97,57 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/skip"
-        android:onClick="skip"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="156dp"
-        android:layout_marginTop="228dp"
-        android:text="Skip"
+        android:id="@+id/HuaweiIdCancelAuthButton"
+        android:layout_width="260dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/radius_search"
+        android:backgroundTint="@color/some_blue"
+        android:text="Cancel Authorization"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/HuaweiIdSignOutButton"
+        app:layout_constraintVertical_bias="0.004" />
+
+    <Button
+        android:id="@+id/HuaweiIdSignOutButton"
+        android:layout_width="260dp"
+        android:layout_height="38dp"
+        android:background="@drawable/radius_search"
+        android:backgroundTint="@color/some_blue"
+        android:text="Sign Out"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.379" />
+
+    <Button
+        android:id="@+id/skip"
+        android:layout_width="260dp"
+        android:layout_height="38dp"
+        android:background="@drawable/radius_search"
+        android:backgroundTint="@color/some_blue"
+        android:onClick="skip"
+        android:text="Sign In Later"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.534"
+        tools:ignore="OnClick" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,7 +1,10 @@
 package com.huawei.estravo;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class Profile extends AppCompatActivity {
@@ -17,6 +20,10 @@ public class Profile extends AppCompatActivity {
         TextView email = findViewById(R.id.email);
         email.setText("Email Address: " + Email);
 
+    }
+    public void dashboard(View view){
+        Intent intent = new Intent(Profile.this,DashBoard.class);
+        startActivity(intent);
     }
 
 }

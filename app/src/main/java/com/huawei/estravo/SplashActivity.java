@@ -8,7 +8,7 @@ import android.os.Handler;
 import android.view.WindowManager;
 
 public class SplashActivity extends AppCompatActivity {
-    private int splash=1000;
+    private int splash=4000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

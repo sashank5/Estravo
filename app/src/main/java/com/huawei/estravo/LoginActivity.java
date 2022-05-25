@@ -1,33 +1,13 @@
-/*
- * Copyright 2020. Huawei Technologies Co., Ltd. All rights reserved.
-
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-
-     http://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
-
- */
 
 package com.huawei.estravo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.media.Image;
-import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.huawei.hmf.tasks.OnFailureListener;
 import com.huawei.hmf.tasks.OnSuccessListener;
 import com.huawei.hmf.tasks.Task;
@@ -37,14 +17,14 @@ import com.huawei.hms.support.account.request.AccountAuthParams;
 import com.huawei.hms.support.account.request.AccountAuthParamsHelper;
 import com.huawei.hms.support.account.result.AuthAccount;
 import com.huawei.hms.support.account.service.AccountAuthService;
+import com.huawei.hms.support.feature.result.AbstractAuthAccount;
 
 public class LoginActivity extends AppCompatActivity {
-	private AccountAuthService mAuthService;
-	private AccountAuthParams mAuthParam;
-	private static final int REQUEST_CODE_SIGN_IN = 1000;
-	private static final String TAG = "Account";
-	private TextView logText;
-
+	public AccountAuthService mAuthService;
+	public AccountAuthParams mAuthParam;
+	public static final int REQUEST_CODE_SIGN_IN = 1000;
+	public static final String TAG = "Account";
+	public TextView logText;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -63,16 +43,18 @@ public class LoginActivity extends AppCompatActivity {
 				signOut();
 			}
 		});
-
 		findViewById(R.id.HuaweiIdCancelAuthButton).setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				cancelAuthorization();
 			}
 		});
+
 		logText = findViewById(R.id.log);
 
 	}
+
+
 
 	public void silentSignInByHwId() {
 
@@ -105,8 +87,51 @@ public class LoginActivity extends AppCompatActivity {
 			}
 		});
 	}
+	public void signOut() {
+		if (mAuthService == null) {
+			return;
+		}
+		Task<Void> signOutTask = mAuthService.signOut();
+		signOutTask.addOnSuccessListener(new OnSuccessListener<Void>() {
+			@Override
+			public void onSuccess(Void aVoid) {
+				Log.i(TAG, "signOut Success");
+				showLog("signOut Success");
+			}
+		}).addOnFailureListener(new OnFailureListener() {
+			@Override
+			public void onFailure(Exception e) {
+				Log.i(TAG, "signOut fail");
+				showLog("signOut fail");
+			}
+		});
+	}
+	public void cancelAuthorization() {
+		if (mAuthService == null) {
+			return;
+		}
+		Task<Void> task = mAuthService.cancelAuthorization();
+		task.addOnSuccessListener(new OnSuccessListener<Void>() {
+			@Override
+			public void onSuccess(Void aVoid) {
+				Log.i(TAG, "cancelAuthorization success");
+				showLog("cancelAuthorization success");
+			}
+		});
+		task.addOnFailureListener(new OnFailureListener() {
+			@Override
+			public void onFailure(Exception e) {
+				Log.i(TAG, "cancelAuthorization failure：" + e.getClass().getSimpleName());
+				showLog("cancelAuthorization failure：" + e.getClass().getSimpleName());
+			}
+		});
+	}
 	public void skip(View view){
 		Intent intent = new Intent(this,DashBoard.class);
+		String User_name = "Welcome User";
+		String Email = "New User";
+		intent.putExtra("User_name",User_name);
+		intent.putExtra("Email",Email);
 		startActivity(intent);
 	}
 	public void dealWithResultOfSignIn(AuthAccount authAccount) {
@@ -140,47 +165,6 @@ public class LoginActivity extends AppCompatActivity {
 		}
 
 
-	}
-
-	public void signOut() {
-		if (mAuthService == null) {
-			return;
-		}
-		Task<Void> signOutTask = mAuthService.signOut();
-		signOutTask.addOnSuccessListener(new OnSuccessListener<Void>() {
-			@Override
-			public void onSuccess(Void aVoid) {
-				Log.i(TAG, "SignOut Success");
-				showLog("SignOut Success");
-			}
-		}).addOnFailureListener(new OnFailureListener() {
-			@Override
-			public void onFailure(Exception e) {
-				Log.i(TAG, "SignOut fail");
-				showLog("SignOut fail");
-			}
-		});
-	}
-
-	private void cancelAuthorization() {
-		if (mAuthService == null) {
-			return;
-		}
-		Task<Void> task = mAuthService.cancelAuthorization();
-		task.addOnSuccessListener(new OnSuccessListener<Void>() {
-			@Override
-			public void onSuccess(Void aVoid) {
-				Log.i(TAG, "cancelAuthorization success");
-				showLog("cancelAuthorization success");
-			}
-		});
-		task.addOnFailureListener(new OnFailureListener() {
-			@Override
-			public void onFailure(Exception e) {
-				Log.i(TAG, "cancelAuthorization failure：" + e.getClass().getSimpleName());
-				showLog("cancelAuthorization failure：" + e.getClass().getSimpleName());
-			}
-		});
 	}
 
 	private void showLog(String log) {
