@@ -17,6 +17,7 @@
         android:name="com.huawei.hms.ml.DEPENDENCY"
         android:value="ocr" />
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
@@ -29,7 +30,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <activity
+            android:name=".Weather"
+            android:exported="false" />
         <activity
             android:name=".SplashActivity"
             android:exported="true"
@@ -50,7 +53,6 @@
             android:parentActivityName=".MainActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:windowSoftInputMode="stateVisible|adjustPan" />
-
         <activity
             android:name=".DashBoard"
             android:parentActivityName=".LoginActivity"
@@ -74,8 +76,9 @@
             android:windowSoftInputMode="stateVisible|adjustPan" />
         <activity
             android:name=".Profile"
-            android:windowSoftInputMode="stateVisible|adjustPan"
-            android:parentActivityName=".DashBoard"/>
+            android:parentActivityName=".DashBoard"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+
         <meta-data
             android:name="com.huawei.hms.client.channel.androidMarket"
             android:value="false" />

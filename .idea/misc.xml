@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Projects/Estravo/app/src/main/res/drawable/gradient.xml" value="0.17263513513513515" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/drawable/huawei.xml" value="0.17263513513513515" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.2555" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/drawable/ic_baseline_keyboard_backspace_24.xml" value="0.17263513513513515" />
@@ -34,12 +35,13 @@
         <entry key="..\:/Projects/Estravo/app/src/main/res/layout/activity_splash1.xml" value="0.16216216216216217" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/layout/activity_supportmapfragment_demo.xml" value="0.16259057971014493" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/layout/activity_topdestinations.xml" value="0.136" />
+        <entry key="..\:/Projects/Estravo/app/src/main/res/layout/activity_weather.xml" value="0.264" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/layout/cancel_and_logout_buttons.xml" value="0.10574324324324325" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/layout/card_layout.xml" value="0.15304054054054053" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/layout/fragment1_layout.xml" value="0.16216216216216217" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/layout/iphone_13_pro_max___1.xml" value="0.19375" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/layout/iphone_13_pro_max___2.xml" value="0.19375" />
-        <entry key="..\:/Projects/Estravo/app/src/main/res/layout/item_design.xml" value="0.12" />
+        <entry key="..\:/Projects/Estravo/app/src/main/res/layout/item_design.xml" value="0.152" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/layout/layout.xml" value="0.234375" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/layout/listview_item.xml" value="0.12" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/layout/navibar.xml" value="0.16216216216216217" />

@@ -1,6 +1,10 @@
 package com.huawei.estravo;
 
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.Manifest;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -10,53 +14,52 @@ public class DashBoard extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dash_board);
+        ActivityResultLauncher<String[]> locationPermissionRequest =
+                registerForActivityResult(new ActivityResultContracts
+                                .RequestMultiplePermissions(), result -> {
+                            Boolean fineLocationGranted = result.getOrDefault(
+                                    Manifest.permission.ACCESS_FINE_LOCATION, false);
+                            Boolean coarseLocationGranted = result.getOrDefault(
+                                    Manifest.permission.ACCESS_COARSE_LOCATION,false);
+                            if (fineLocationGranted != null && fineLocationGranted) {
+                                // Precise location access granted.
+                            } else if (coarseLocationGranted != null && coarseLocationGranted) {
+                                // Only approximate location access granted.
+                            } else {
+                                // No location access granted.
+                            }
+                        }
+                );
+        locationPermissionRequest.launch(new String[] {
+                Manifest.permission.ACCESS_FINE_LOCATION,
+                Manifest.permission.ACCESS_COARSE_LOCATION
+        });
     }
 
     public void profile(View view){
         Intent intent = new Intent(DashBoard.this,Profile.class);
-        Bundle bundle = getIntent().getExtras();
-        String User_name = bundle.getString("User_name");
-        String Email = bundle.getString("Email");
-        intent.putExtra("User_name",User_name);
-        intent.putExtra("Email",Email);
         startActivity(intent);
     }
     public void top_destinations(View view){
         Intent intent = new Intent(DashBoard.this, Recycler_topdestinations.class);
-        Bundle bundle = getIntent().getExtras();
-        String User_name = bundle.getString("User_name");
-        String Email = bundle.getString("Email");
-        intent.putExtra("User_name",User_name);
-        intent.putExtra("Email",Email);
         startActivity(intent);
     }
     public void restaurants(View view){
 
         Intent intent = new Intent(DashBoard.this, Recycler_restaurants.class);
-        Bundle bundle = getIntent().getExtras();
-        String User_name = bundle.getString("User_name");
-        String Email = bundle.getString("Email");
-        intent.putExtra("User_name",User_name);
-        intent.putExtra("Email",Email);
         startActivity(intent);
     }
     public void emergency(View view){
         Intent intent = new Intent(DashBoard.this, Recycler_emergency.class);
-        Bundle bundle = getIntent().getExtras();
-        String User_name = bundle.getString("User_name");
-        String Email = bundle.getString("Email");
-        intent.putExtra("User_name",User_name);
-        intent.putExtra("Email",Email);
         startActivity(intent);
     }
     public void hotels(View view){
 
         Intent intent = new Intent(DashBoard.this, Recycler_hotels.class);
-        Bundle bundle = getIntent().getExtras();
-        String User_name = bundle.getString("User_name");
-        String Email = bundle.getString("Email");
-        intent.putExtra("User_name",User_name);
-        intent.putExtra("Email",Email);
+        startActivity(intent);
+    }
+    public void weather(View view){
+        Intent intent = new Intent(DashBoard.this, Weather.class);
         startActivity(intent);
     }
 

@@ -44,13 +44,13 @@ public class Recycler_hotels extends AppCompatActivity {
     }
     public void go_profile(View view){
         Intent intent = new Intent(this,Profile.class);
-        Bundle bundle = getIntent().getExtras();
-        String User_name = bundle.getString("User_name");
-        String Email = bundle.getString("Email");
-        intent.putExtra("User_name",User_name);
-        intent.putExtra("Email",Email);
         startActivity(intent);
     }
+    public void back(View view){
+        Intent intent = new Intent(this,DashBoard.class);
+        startActivity(intent);
+    }
+
 
     public void home(View view){
         Intent intent = new Intent(this,DashBoard.class);

@@ -2,7 +2,6 @@
 package com.huawei.estravo;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -17,7 +16,6 @@ import com.huawei.hms.support.account.request.AccountAuthParams;
 import com.huawei.hms.support.account.request.AccountAuthParamsHelper;
 import com.huawei.hms.support.account.result.AuthAccount;
 import com.huawei.hms.support.account.service.AccountAuthService;
-import com.huawei.hms.support.feature.result.AbstractAuthAccount;
 
 public class LoginActivity extends AppCompatActivity {
 	public AccountAuthService mAuthService;
@@ -25,6 +23,7 @@ public class LoginActivity extends AppCompatActivity {
 	public static final int REQUEST_CODE_SIGN_IN = 1000;
 	public static final String TAG = "Account";
 	public TextView logText;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -128,20 +127,12 @@ public class LoginActivity extends AppCompatActivity {
 	}
 	public void skip(View view){
 		Intent intent = new Intent(this,DashBoard.class);
-		String User_name = "Welcome User";
-		String Email = "New User";
-		intent.putExtra("User_name",User_name);
-		intent.putExtra("Email",Email);
 		startActivity(intent);
 	}
-	public void dealWithResultOfSignIn(AuthAccount authAccount) {
+	public void dealWithResultOfSignIn(AuthAccount authAccount)
+	{
 		Intent intent = new Intent(this,DashBoard.class);
-		String User_name = authAccount.getDisplayName();
-		String Email = authAccount.getEmail();
-		intent.putExtra("User_name",User_name);
-		intent.putExtra("Email",Email);
 		startActivity(intent);
-
 	}
 
 	@Override
@@ -163,6 +154,7 @@ public class LoginActivity extends AppCompatActivity {
 				Log.e(TAG, "sign in failed : " + ((ApiException) authAccountTask.getException()).getStatusCode());
 			}
 		}
+
 
 
 	}

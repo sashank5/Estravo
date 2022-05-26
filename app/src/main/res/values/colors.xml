@@ -149,4 +149,6 @@
 		<color name="some_pink">#E59595</color>
 	    <color name="grey">#EFEFEF</color>
 		<color name="grey2">#D7CDCD</color>
+		<color name="gradient">#C5D7F1</color>
+
 </resources>
