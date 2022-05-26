@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Weather"
+    android:background="@drawable/background">
+    <TextView
+        android:id="@+id/tv35"
+        android:layout_width="370dp"
+        android:layout_height="46dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="750dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/radius_bottom_navi" />
+
+    <ImageButton
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="745dp"
+        android:backgroundTint="#10294C"
+        app:srcCompat="@drawable/save" />
+
+    <ImageButton
+        android:id="@+id/homeicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="745dp"
+        android:backgroundTint="#10294C"
+        android:onClick="home"
+        app:srcCompat="@drawable/homeicon" />
+
+    <ImageButton
+        android:id="@+id/support"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="745dp"
+        android:backgroundTint="#10294C"
+        app:srcCompat="@drawable/support" />
+
+    <ImageButton
+        android:id="@+id/go_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="745dp"
+        android:backgroundTint="#10294C"
+        android:onClick="go_profile"
+        app:srcCompat="@drawable/profile" />
+
+    <ImageButton
+        android:id="@+id/menu"
+        android:layout_width="62dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="335dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#10294C"
+        app:srcCompat="@drawable/menu" />
+
+    <TextView
+        android:id="@+id/city_name"
+        android:layout_width="140dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="10dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/Weather"
+        android:layout_width="230dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/white_location_pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/white_location_pin" />
+
+    <ImageButton
+        android:id="@+id/backicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/some_blue"
+        android:onClick="back"
+        app:srcCompat="@drawable/ic_baseline_keyboard_backspace_24" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="200dp"
+        app:srcCompat="@drawable/gradient" />
+
+
+    <TextView
+        android:id="@+id/tv48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="490dp"
+        android:text="Real_Temp: "
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/tv49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="530dp"
+        android:text="Pressure: "
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="200dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="110dp" />
+
+    <TextView
+        android:id="@+id/tv44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="370dp"
+        android:text="Wind Speed: "
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/tv45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="410dp"
+        android:text="Wind Direction: "
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/tv46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="450dp"
+        android:text="Humidity: "
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/windspeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="370dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/winddir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="410dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="450dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/real_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="490dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/pressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="176dp"
+        android:layout_marginTop="530dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+
+</RelativeLayout>
