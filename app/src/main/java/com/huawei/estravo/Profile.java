@@ -29,8 +29,7 @@ public class Profile extends AppCompatActivity {
 
     }
     public void back(View view){
-        Intent intent = new Intent(Profile.this,DashBoard.class);
-        startActivity(intent);
+        onBackPressed();
     }
     public void dashboard(View view){
         Intent intent = new Intent(Profile.this,DashBoard.class);

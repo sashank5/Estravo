@@ -1,6 +1,7 @@
 package com.huawei.estravo;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.SearchView;
@@ -47,8 +48,8 @@ public class Recycler_hotels extends AppCompatActivity {
         startActivity(intent);
     }
     public void back(View view){
-        Intent intent = new Intent(this,DashBoard.class);
-        startActivity(intent);
+        onBackPressed();
+
     }
 
 

@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.SearchView;
@@ -44,8 +45,8 @@ public class Recycler_restaurants extends AppCompatActivity {
         });
     }
     public void back(View view){
-        Intent intent = new Intent(this,DashBoard.class);
-        startActivity(intent);
+        onBackPressed();
+
     }
     public void go_profile(View view){
         Intent intent = new Intent(this,Profile.class);

@@ -1,5 +1,4 @@
 package com.huawei.estravo;
-
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,6 +7,7 @@ import android.Manifest;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
 
 public class DashBoard extends AppCompatActivity {
     @Override
@@ -22,14 +22,14 @@ public class DashBoard extends AppCompatActivity {
                             Boolean coarseLocationGranted = result.getOrDefault(
                                     Manifest.permission.ACCESS_COARSE_LOCATION,false);
                             if (fineLocationGranted != null && fineLocationGranted) {
-                                // Precise location access granted.
+
                             } else if (coarseLocationGranted != null && coarseLocationGranted) {
-                                // Only approximate location access granted.
+
                             } else {
-                                // No location access granted.
                             }
                         }
                 );
+
         locationPermissionRequest.launch(new String[] {
                 Manifest.permission.ACCESS_FINE_LOCATION,
                 Manifest.permission.ACCESS_COARSE_LOCATION
@@ -45,7 +45,6 @@ public class DashBoard extends AppCompatActivity {
         startActivity(intent);
     }
     public void restaurants(View view){
-
         Intent intent = new Intent(DashBoard.this, Recycler_restaurants.class);
         startActivity(intent);
     }
@@ -54,12 +53,15 @@ public class DashBoard extends AppCompatActivity {
         startActivity(intent);
     }
     public void hotels(View view){
-
         Intent intent = new Intent(DashBoard.this, Recycler_hotels.class);
         startActivity(intent);
     }
     public void weather(View view){
         Intent intent = new Intent(DashBoard.this, Weather.class);
+        startActivity(intent);
+    }
+    public void translations(View view){
+        Intent intent = new Intent(DashBoard.this,Translations.class);
         startActivity(intent);
     }
 

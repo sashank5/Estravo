@@ -1,87 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.huawei.estravo">
-
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.huawei.estravo">
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
-
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="EsTravo" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity" android:exported="true" android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" android:parentActivityName=".SplashActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name=".LoginActivity" android:parentActivityName=".MainActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name=".DashBoard" android:parentActivityName=".LoginActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name=".Recycler_emergency" android:parentActivityName=".DashBoard" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name=".Recycler_hotels" android:parentActivityName=".DashBoard" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name=".Recycler_topdestinations" android:parentActivityName=".DashBoard" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name=".Recycler_restaurants" android:parentActivityName=".DashBoard" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name=".Profile" android:parentActivityName=".DashBoard" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name=".Weather" android:parentActivityName=".DashBoard" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name=".camera.CapturePhotoActivity" />
+        <activity android:name=".Translations" android:parentActivityName=".DashBoard" />
+        <activity android:name=".RemoteTranslateActivity" android:parentActivityName=".Translations" />
+        <meta-data android:name="com.huawei.hms.client.channel.androidMarket" android:value="false" />
+    </application>
     <queries>
         <intent>
             <action android:name="com.huawei.hms.core.aidlservice" />
         </intent>
     </queries>
-
-    <meta-data
-        android:name="com.huawei.hms.ml.DEPENDENCY"
-        android:value="ocr" />
-
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
-    <uses-permission android:name="android.permission.READ_CONTACTS" />
-
-    <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="EsTravo"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity
-            android:name=".Weather"
-            android:exported="false" />
-        <activity
-            android:name=".SplashActivity"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".MainActivity"
-            android:parentActivityName=".SplashActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:windowSoftInputMode="stateVisible|adjustPan" />
-        <activity
-            android:name=".LoginActivity"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:windowSoftInputMode="stateVisible|adjustPan" />
-        <activity
-            android:name=".DashBoard"
-            android:parentActivityName=".LoginActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:windowSoftInputMode="stateVisible|adjustPan" />
-        <activity
-            android:name=".Recycler_emergency"
-            android:parentActivityName=".DashBoard"
-            android:windowSoftInputMode="stateVisible|adjustPan" />
-        <activity
-            android:name=".Recycler_hotels"
-            android:parentActivityName=".DashBoard"
-            android:windowSoftInputMode="stateVisible|adjustPan" />
-        <activity
-            android:name=".Recycler_topdestinations"
-            android:parentActivityName=".DashBoard"
-            android:windowSoftInputMode="stateVisible|adjustPan" />
-        <activity
-            android:name=".Recycler_restaurants"
-            android:parentActivityName=".DashBoard"
-            android:windowSoftInputMode="stateVisible|adjustPan" />
-        <activity
-            android:name=".Profile"
-            android:parentActivityName=".DashBoard"
-            android:windowSoftInputMode="stateVisible|adjustPan" />
-
-        <meta-data
-            android:name="com.huawei.hms.client.channel.androidMarket"
-            android:value="false" />
-    </application>
-
 </manifest>
+

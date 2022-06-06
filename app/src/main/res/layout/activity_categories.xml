@@ -65,6 +65,7 @@
 
     <SearchView
         android:id="@+id/search_view"
+        android:queryBackground="@android:color/transparent"
         android:layout_width="370dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="25dp"
@@ -86,9 +87,9 @@
     </androidx.recyclerview.widget.RecyclerView>
 
     <TextView
-        android:id="@+id/tv35"
-        android:layout_width="370dp"
-        android:layout_height="46dp"
+        android:id="@+id/tv25"
+        android:layout_width="367dp"
+        android:layout_height="37dp"
         android:layout_marginLeft="18dp"
         android:layout_marginTop="750dp"
         android:layout_marginBottom="10dp"
@@ -96,41 +97,42 @@
 
     <ImageButton
         android:id="@+id/save"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="125dp"
-        android:layout_marginTop="745dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="145dp"
+        android:layout_marginTop="755dp"
         android:backgroundTint="#10294C"
         app:srcCompat="@drawable/save" />
 
     <ImageButton
-        android:id="@+id/homeicon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="37dp"
-        android:layout_marginTop="745dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="755dp"
         android:backgroundTint="#10294C"
         android:onClick="home"
         app:srcCompat="@drawable/homeicon" />
 
     <ImageButton
         android:id="@+id/support"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="220dp"
-        android:layout_marginTop="745dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="225dp"
+        android:layout_marginTop="755dp"
         android:backgroundTint="#10294C"
         app:srcCompat="@drawable/support" />
 
     <ImageButton
-        android:id="@+id/go_profile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/profile1"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
         android:layout_marginLeft="310dp"
-        android:layout_marginTop="745dp"
+        android:layout_marginTop="755dp"
         android:backgroundTint="#10294C"
-        android:onClick="go_profile"
+        android:onClick="profile"
         app:srcCompat="@drawable/profile" />
+
+
 
 
 

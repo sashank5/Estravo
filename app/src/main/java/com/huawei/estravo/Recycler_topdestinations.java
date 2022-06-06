@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.SearchView;
@@ -49,8 +50,8 @@ public class Recycler_topdestinations extends AppCompatActivity {
         startActivity(intent);
     }
     public void back(View view){
-        Intent intent = new Intent(this,DashBoard.class);
-        startActivity(intent);
+        onBackPressed();
+
     }
     public void home(View view){
         Intent intent = new Intent(this,DashBoard.class);

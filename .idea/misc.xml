@@ -15,6 +15,7 @@
         <entry key="..\:/Projects/Estravo/app/src/main/res/drawable/radius_search.xml" value="0.17263513513513515" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/drawable/search.xml" value="0.17263513513513515" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/layout/activity_camera_demo.xml" value="0.1984375" />
+        <entry key="..\:/Projects/Estravo/app/src/main/res/layout/activity_capture_photo.xml" value="0.15202702702702703" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/layout/activity_categories.xml" value="0.136" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/layout/activity_circle_demo.xml" value="0.1984375" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/layout/activity_dash_board.xml" value="0.13148907103825136" />
@@ -27,15 +28,24 @@
         <entry key="..\:/Projects/Estravo/app/src/main/res/layout/activity_location.xml" value="0.136" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/layout/activity_main.xml" value="0.152" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/layout/activity_main1.xml" value="0.25" />
+        <entry key="..\:/Projects/Estravo/app/src/main/res/layout/activity_nearby_search.xml" value="0.12704918032786885" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/layout/activity_profile.xml" value="0.152" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/layout/activity_query_suggestion.xml" value="0.16216216216216217" />
+        <entry key="..\:/Projects/Estravo/app/src/main/res/layout/activity_remote_translate.xml" value="0.16216216216216217" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/layout/activity_restaurants.xml" value="0.10400000000000001" />
+        <entry key="..\:/Projects/Estravo/app/src/main/res/layout/activity_scan.xml" value="0.16216216216216217" />
+        <entry key="..\:/Projects/Estravo/app/src/main/res/layout/activity_scan_text.xml" value="0.16216216216216217" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/layout/activity_search.xml" value="0.16216216216216217" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/layout/activity_splash.xml" value="0.136" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/layout/activity_splash1.xml" value="0.16216216216216217" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/layout/activity_supportmapfragment_demo.xml" value="0.16259057971014493" />
+        <entry key="..\:/Projects/Estravo/app/src/main/res/layout/activity_text_scan.xml" value="0.176" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/layout/activity_topdestinations.xml" value="0.136" />
-        <entry key="..\:/Projects/Estravo/app/src/main/res/layout/activity_weather.xml" value="0.264" />
+        <entry key="..\:/Projects/Estravo/app/src/main/res/layout/activity_translate.xml" value="0.16" />
+        <entry key="..\:/Projects/Estravo/app/src/main/res/layout/activity_translate_photo.xml" value="0.15202702702702703" />
+        <entry key="..\:/Projects/Estravo/app/src/main/res/layout/activity_translation.xml" value="0.15202702702702703" />
+        <entry key="..\:/Projects/Estravo/app/src/main/res/layout/activity_translations.xml" value="0.16216216216216217" />
+        <entry key="..\:/Projects/Estravo/app/src/main/res/layout/activity_weather.xml" value="0.176" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/layout/cancel_and_logout_buttons.xml" value="0.10574324324324325" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/layout/card_layout.xml" value="0.15304054054054053" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/layout/fragment1_layout.xml" value="0.16216216216216217" />
