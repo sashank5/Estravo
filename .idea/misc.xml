@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Projects/Estravo/app/src/main/res/drawable-v24/colors_btn.xml" value="0.1516891891891892" />
+        <entry key="..\:/Projects/Estravo/app/src/main/res/drawable-v24/scanningframe.xml" value="0.17263513513513515" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/drawable/gradient.xml" value="0.17263513513513515" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/drawable/huawei.xml" value="0.17263513513513515" />
         <entry key="..\:/Projects/Estravo/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.2555" />
