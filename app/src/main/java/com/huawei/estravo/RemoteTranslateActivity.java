@@ -88,7 +88,7 @@ public class RemoteTranslateActivity extends AppCompatActivity {
         this.findViewById(R.id.back).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                RemoteTranslateActivity.this.finish();
+                onBackPressed();
             }
         });
         this.isLandScape =

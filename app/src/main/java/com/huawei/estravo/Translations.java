@@ -177,7 +177,9 @@ public class Translations extends AppCompatActivity implements View.OnClickListe
         return this.spSourceAdapter.getItem(index);
     }
 
-
+    public void back(View view){
+        onBackPressed();
+    }
 
 
     private void setApiKey(){

@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/primary_background"
     android:fitsSystemWindows="true"
     android:keepScreenOn="true"
@@ -33,12 +34,15 @@
 
     <ImageButton
         android:id="@+id/back"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:background="@drawable/button_circle_background"
-        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:src="@drawable/black_back" />
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/some_blue"
+        android:onClick="back"
+        app:srcCompat="@drawable/ic_baseline_keyboard_backspace_24" />
 
     <LinearLayout
         android:id="@+id/linear_views"
